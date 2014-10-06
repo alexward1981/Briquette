@@ -1,0 +1,4 @@
+#Live site
+User-agent: *
+Allow: /
+Disallow: /charcoal
