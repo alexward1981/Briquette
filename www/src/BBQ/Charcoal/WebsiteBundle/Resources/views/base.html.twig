@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    {% image '@BBQCharcoalWebsiteBundle/Resources/static/images/logos/favicon.ico' %}
+        <link rel="shortcut icon" href="{{ asset_url }}" type="image/x-icon" />
+    {% endimage %}
+    <!--
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/images/logos/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/logos/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/images/logos/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/logos/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/images/logos/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/images/logos/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/images/logos/apple-touch-icon-152x152.png" /> -->
+    {% image '@BBQCharcoalWebsiteBundle/Resources/static/images/logos/apple-touch-icon.png' %}
+        <link rel="apple-touch-icon" href="{{ asset_url }}" />
+    {% endimage %}
+    <!-- CSS -->
+    {% block stylesheets %}
+        {% stylesheets '@BBQCharcoalWebsiteBundle/Resources/static/styles/core.scss' filter='scss, cssrewrite' output='styles/core.css' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+    <!-- Javascript Libraries -->
+    {% block javascripts %}
+        {% javascripts '@BBQCharcoalWebsiteBundle/Resources/static/scripts/lib/*' output='js/library.js' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
+    <!-- SEO tags -->
+    <title>{% block title %}Welcome to Symphony {% endblock %} | Symphony</title>
+    <link rel="canonical" href="http://oursymphony.org" />
+    <meta name="description" content="Taking steps to empower young women around the world through higher education" />
+    <meta property="og:locale" content="en_UK" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Symphony" />
+    <meta property="og:description" content="Taking steps to empower young women around the world through higher education" />
+    {% image '@BBQCharcoalWebsiteBundle/Resources/static/images/logos/logo-green.png' %}
+        <meta property="og:image" content="{{ asset_url }}"/>
+    {% endimage %}
+    <meta property="og:url" content="http://oursymphony.org" />
+    <meta property="og:site_name" content="Symphony" />
+</head>
+<body>
+    <div class="skip"><a href="#main">Skip to main content</a></div>
+    <div class="wrapper">
+        <div id="main" role="main">
+            {% block body %}Error: Content not found{% endblock %}
+        </div>
+    </div>
+    {% block footerscripts %}
+        {% javascripts '@BBQCharcoalWebsiteBundle/Resources/static/scripts/modules/global/*' output='js/core.js' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
+</body>
+</html>
+

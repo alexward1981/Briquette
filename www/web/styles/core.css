@@ -1,0 +1,170 @@
+/* Modified YUI2 Reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0;
+  outline: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+abbr, acronym {
+  border: 0; }
+
+input, textarea {
+  -webkit-appearance: none; }
+
+header, article, section, nav, figure, aside, hgroup, footer {
+  display: block;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+html, html a {
+  -webkit-font-smoothing: antialiased !important; }
+
+select::-ms-expand {
+  display: none; }
+
+body {
+  font-size: 62.5%; }
+
+/* Any text inside a paragraph should be formatted normally */
+p strong {
+  font-weight: bold; }
+
+p em {
+  font-style: italic; }
+
+/* fonts */
+@font-face {
+  font-family: 'Diavlo';
+  src: url("../../Resources/static/fonts/Diavlo_BOOK_II_37.otf") format("opentype");
+  font-weight: normal; }
+@font-face {
+  font-family: 'Diavlo';
+  src: url("../../Resources/static/fonts/Diavlo_BOLD_II_37.otf") format("opentype");
+  font-weight: bold; }
+@font-face {
+  font-family: 'Diavlo';
+  src: url("../../Resources/static/fonts/Diavlo_BLACK_II_37.otf") format("opentype");
+  font-weight: extraBold; }
+/* The classes below are not to be used in Markup, they are for sass imports only */
+.extraBold {
+  font-weight: 600; }
+
+.black {
+  font-weight: 900; }
+
+/* This is where all global classes are held, use of !important is ONLY permitted on this page */
+/* Common classes */
+.hide {
+  display: none !important; }
+
+.fl {
+  float: left !important; }
+
+.fr {
+  float: right !important; }
+
+.small {
+  font-size: 1em !important; }
+
+.large {
+  font-size: 3em !important; }
+
+.tac {
+  text-align: center; }
+
+/* This is Briquette. The CSS base for all BBQ Digital projects */
+.skip a {
+  position: absolute;
+  top: -80px;
+  display: block;
+  width: 100%;
+  padding: 1em;
+  font-size: 1.6em;
+  text-align: center;
+  background: #117f8c;
+  color: #fff;
+  z-index: 999999;
+  -webkit-transition: top 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: top 1s; }
+  .skip a:focus {
+    top: 0; }
+
+.no-js .wrapper .warnings,
+.no-js .warning {
+  position: static; }
+
+.warning {
+  position: relative;
+  background: url(../../Resources/static/images/briquette/error-bg-tile.png) repeat;
+  padding: 2em 1em;
+  text-align: center;
+  font-size: 1.2em;
+  border-bottom: 1px dotted #f00; }
+  .warning span {
+    font-weight: bold; }
+  .warning a {
+    font-weight: bold;
+    color: #117f8c; }
+  .warning .close {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .warning .close:before {
+      color: #117f8c;
+      content: "[ "; }
+    .warning .close:after {
+      color: #117f8c;
+      content: " ] close"; }
+
+.for-print,
+.js .js-disabled {
+  display: none; }
+
+/* Global CSS styles */
+body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Diavlo", "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 3em;
+  font-weight: bold; }
+
+/* This is where all media queries are held */
+/* The styles in this sheet are only visible when JS is enabled */
