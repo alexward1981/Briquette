@@ -1,0 +1,37 @@
+/* fonts */
+@font-face {
+    font-family: 'Diavlo';
+    src: url('../fonts/diavlo_regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Diavlo';
+    src: url('../fonts/diavlo_bold.otf') format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Diavlo';
+    src: url('../fonts/diavlo_black.otf') format('opentype');
+    font-weight: bolder;
+}
+
+
+$brand: #117f8c;
+$brand50: lighten( $brand, 50%);
+$brand25: lighten( $brand, 25%);
+$brand10: lighten( $brand, 10%);
+$brand5: lighten( $brand, 5%);
+
+$darkGrey: #333;
+$mediumGrey: #666;
+$lightGrey: #ccc;
+$offWhite: #f1f1f1;
+
+$primaryFont: 'Lucida Grande',Helvetica,Arial,sans-serif;
+$secondaryFont: 'Diavlo','Lucida Grande',Helvetica,Arial,sans-serif;
+
+/* The classes below are not to be used in Markup, they are for sass imports only */
+
+.extraBold { font-weight: 600; }
+.black { font-weight: 900; }
