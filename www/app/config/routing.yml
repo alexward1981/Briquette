@@ -1,0 +1,4 @@
+bbq_charcoal_website:
+    resource: "@BBQCharcoalWebsiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
